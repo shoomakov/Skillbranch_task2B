@@ -16,8 +16,7 @@ app.get('/task2B', (req, res) => {
     if (isNull(parse.pathname)) {
       return res.send('Invalid fullname');
     } else {
-      const finishedResult = splitString(result.trim()
-                                               .replace(/ +/g, ' '), ' ');
+      const finishedResult = splitString(result.trim().replace(/ +/g, ' '), ' ');
       return res.send(finishedResult);
     }
 });
